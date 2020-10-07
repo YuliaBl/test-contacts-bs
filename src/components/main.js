@@ -1,13 +1,14 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import AddNewUserInfo from './add-new-user'
+import ContactList from './contact-list'
+
 
 const Main = () => {
 
-const user = useSelector((s) => s.sample.name)
-
-  return(
-    <div>
-      {user}
+  return (
+    <div className="w-75 mx-auto my-4">
+      <AddNewUserInfo />
+      <ContactList />
     </div>
   )
 }
